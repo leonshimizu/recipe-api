@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Recipe.create(name: "PB&J", instructions: "Put peanut butter and jelly on bread and put the bread together", ingredients: "bread, peanut butter, jelly")
+
+Recipe.create(name: "Cereal and milk", instructions: "Add cereal and milk into a bowl", ingredients: "cereal, milk")
