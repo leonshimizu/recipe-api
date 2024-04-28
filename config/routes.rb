@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   post "/recipes" => "recipes#create"
   get "/recipes/:id" => "recipes#show"
   patch "/recipes/:id" => "recipes#update"
+  get "/random" => "recipes#random"
 end

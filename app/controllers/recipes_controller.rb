@@ -27,4 +27,15 @@ class RecipesController < ApplicationController
     )
     render json: recipe.as_json
   end
+
+  def random
+    recipes = Recipe.all
+    ids = []
+    recipes.each do |recipe|
+      ids << recipe.id
+    end
+    random_id = ids.sample
+    random_recipe = Recipe.find(random_id)
+    render json: random_recipe.as_json
+  end
 end
